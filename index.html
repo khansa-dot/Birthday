@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="confetti"></div>
+        <header>
+            <h1>🎂 Happy Birthday! 🎂</h1>
+            <div class="birthday-person">
+                <h2 id="birthdayName">Dear Friend</h2>
+                <div class="age-display">
+                    <span id="age">25</span>
+                    <span class="years">Years Young!</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="message-box">
+                <p class="birthday-message">
+                    Wishing you a day filled with happiness, joy, and wonderful surprises! 
+                    May this new chapter of your life bring you endless opportunities, 
+                    beautiful memories, and all the success you deserve. 
+                    You're an amazing person who deserves the world and more!
+                </p>
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Count your life by smiles, not tears. Count your age by friends, not years.</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+
+            <div class="interactive-section">
+                <button id="cakeBtn" class="btn">
+                    <i class="fas fa-birthday-cake"></i> Cut the Cake!
+                </button>
+                <button id="balloonBtn" class="btn">
+                    <i class="fas fa-music"></i> Birthday Music
+                </button>
+                <button id="wishBtn" class="btn">
+                    <i class="fas fa-heart"></i> Make a Wish!
+                </button>
+            </div>
+
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="cake-top"></div>
+                    <div class="cake-middle"></div>
+                    <div class="cake-bottom"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <h3><i class="fas fa-gift"></i> Birthday Wishes</h3>
+                <div class="wishes">
+                    <div class="wish-card">May all your dreams come true! ✨</div>
+                    <div class="wish-card">Health, wealth and happiness! 💝</div>
+                    <div class="wish-card">Another year of amazing adventures! 🌟</div>
+                    <div class="wish-card">You shine brighter every year! 💫</div>
+                </div>
+            </div>
+
+            <div class="personalize-section">
+                <h3><i class="fas fa-edit"></i> Personalize This Card</h3>
+                <input type="text" id="nameInput" placeholder="Enter birthday person's name">
+                <input type="number" id="ageInput" placeholder="Enter age" min="1" max="120">
+                <button id="updateBtn" class="btn-update">Update Birthday</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with <i class="fas fa-heart heart"></i> for someone special</p>
+            <p class="footer-note">Share this link to spread birthday cheer! 🎈</p>
+        </footer>
+    </div>
+
+    <audio id="birthdayMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
