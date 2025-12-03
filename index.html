@@ -3,90 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday! 🎉</title>
+    <title>Happy Birthday My Love 💖</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="confetti"></div>
+        <!-- Watermark Background -->
+        <div class="watermark">🎂</div>
+        
+        <!-- Main Content -->
         <header>
-            <h1>🎂 Happy Birthday! 🎂</h1>
-            <div class="birthday-person">
-                <h2 id="birthdayName">Dear Friend</h2>
-                <div class="age-display">
-                    <span id="age">25</span>
-                    <span class="years">Years Young!</span>
-                </div>
-            </div>
+            <h1 class="main-title">Happy Birthday My Love 💝</h1>
+            <p class="subtitle">To the most beautiful soul in my life</p>
         </header>
 
         <main>
-            <div class="message-box">
-                <p class="birthday-message">
-                    Wishing you a day filled with happiness, joy, and wonderful surprises! 
-                    May this new chapter of your life bring you endless opportunities, 
-                    beautiful memories, and all the success you deserve. 
-                    You're an amazing person who deserves the world and more!
-                </p>
-                <div class="quote">
-                    <i class="fas fa-quote-left"></i>
-                    <p>Count your life by smiles, not tears. Count your age by friends, not years.</p>
-                    <i class="fas fa-quote-right"></i>
-                </div>
-            </div>
-
-            <div class="interactive-section">
-                <button id="cakeBtn" class="btn">
-                    <i class="fas fa-birthday-cake"></i> Cut the Cake!
-                </button>
-                <button id="balloonBtn" class="btn">
-                    <i class="fas fa-music"></i> Birthday Music
-                </button>
-                <button id="wishBtn" class="btn">
-                    <i class="fas fa-heart"></i> Make a Wish!
-                </button>
-            </div>
-
-            <div class="cake-container">
-                <div class="cake">
-                    <div class="cake-top"></div>
-                    <div class="cake-middle"></div>
-                    <div class="cake-bottom"></div>
-                    <div class="candle">
-                        <div class="flame"></div>
+            <!-- "Open Me" Note -->
+            <div class="note-container">
+                <div class="note" id="mainNote">
+                    <div class="note-front">
+                        <div class="note-icon">💌</div>
+                        <h2>Open Me</h2>
+                        <p class="hint">Click to read my heartfelt message</p>
+                    </div>
+                    <div class="note-back">
+                        <h3>To My Dearest Love,</h3>
+                        <p class="message">
+                            On your special day, I want you to know how incredibly blessed I am to have you in my life. 
+                            Your smile brightens my darkest days, your love fills my heart with joy, and your presence 
+                            makes every moment magical. You are my greatest gift, my deepest love, and my forever happiness.
+                        </p>
+                        <p class="signature">With all my love,<br>Your Partner 💕</p>
+                        <button class="close-btn">Close</button>
                     </div>
                 </div>
             </div>
 
-            <div class="gallery">
-                <h3><i class="fas fa-gift"></i> Birthday Wishes</h3>
-                <div class="wishes">
-                    <div class="wish-card">May all your dreams come true! ✨</div>
-                    <div class="wish-card">Health, wealth and happiness! 💝</div>
-                    <div class="wish-card">Another year of amazing adventures! 🌟</div>
-                    <div class="wish-card">You shine brighter every year! 💫</div>
+            <!-- Heartfelt Messages (Hidden by default) -->
+            <div class="messages-container">
+                <!-- Message 1 -->
+                <div class="message-card closed" id="message1">
+                    <div class="card-header">
+                        <h3><i class="fas fa-heart"></i> Why I Love You</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="card-content">
+                        <p>Your kindness touches my soul in ways words cannot express. The way you care for others, 
+                        your gentle heart, and your beautiful spirit make me fall in love with you more every day.</p>
+                    </div>
+                </div>
+
+                <!-- Message 2 -->
+                <div class="message-card closed" id="message2">
+                    <div class="card-header">
+                        <h3><i class="fas fa-star"></i> My Favorite Things About You</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Your infectious laughter that lights up any room</li>
+                            <li>The way your eyes sparkle when you're happy</li>
+                            <li>Your warm hugs that feel like home</li>
+                            <li>Your strength and resilience that inspire me</li>
+                            <li>Your beautiful mind and caring heart</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Message 3 -->
+                <div class="message-card closed" id="message3">
+                    <div class="card-header">
+                        <h3><i class="fas fa-gift"></i> My Birthday Wish For You</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="card-content">
+                        <p>I wish you a year filled with laughter, love, and beautiful moments. May all your dreams 
+                        come true, and may our love continue to grow stronger with each passing day. You deserve 
+                        the world and more, my love.</p>
+                    </div>
+                </div>
+
+                <!-- Message 4 -->
+                <div class="message-card closed" id="message4">
+                    <div class="card-header">
+                        <h3><i class="fas fa-infinity"></i> Forever Promise</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="card-content">
+                        <p>I promise to always stand by your side, to support your dreams, to cherish every moment 
+                        with you, and to love you more with each sunrise. You are my forever and always.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="personalize-section">
-                <h3><i class="fas fa-edit"></i> Personalize This Card</h3>
-                <input type="text" id="nameInput" placeholder="Enter birthday person's name">
-                <input type="number" id="ageInput" placeholder="Enter age" min="1" max="120">
-                <button id="updateBtn" class="btn-update">Update Birthday</button>
+            <!-- Special Button -->
+            <div class="special-section">
+                <button class="special-btn" id="surpriseBtn">
+                    <i class="fas fa-heart"></i> Click for a Special Surprise
+                </button>
+                <div class="surprise-message" id="surpriseMessage">
+                    <h3>💖 You Are My Everything 💖</h3>
+                    <p>Every day with you feels like a blessing. Thank you for being you, 
+                    for loving me, and for making my life complete. I love you more than 
+                    all the stars in the sky!</p>
+                    <div class="hearts-animation">💖💖💖</div>
+                </div>
             </div>
         </main>
 
         <footer>
-            <p>Made with <i class="fas fa-heart heart"></i> for someone special</p>
-            <p class="footer-note">Share this link to spread birthday cheer! 🎈</p>
+            <p class="footer-text">Made with <span class="heartbeat">💖</span> for the love of my life</p>
+            <p class="footer-date">Forever yours, today and always</p>
         </footer>
     </div>
 
-    <audio id="birthdayMusic" loop>
-        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
-    </audio>
+    <!-- Floating Hearts -->
+    <div class="floating-hearts"></div>
 
     <script src="script.js"></script>
 </body>
